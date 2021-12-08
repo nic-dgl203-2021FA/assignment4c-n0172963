@@ -16,6 +16,51 @@
   color: white !important;
 }
 
+.style-1 .jumbotron {
+  margin: auto;
+}
+
+.style-1 .bg-section-portfolio {
+  background-color: #1cd2ff;
+}
+
+.style-1 .bg-section-skill {
+  background-color: #ffadff;
+}
+
+.style-1 .bg-section-education {
+  background-color: #ce703a;
+}
+
+.style-1 .text-section-portfolio {
+  color: white !important;
+}
+
+.style-1 .text-section-portfolio__title {
+  color: #78cff1 !important;
+}
+
+.style-1 .text-section-portfolio__text {
+  color: black !important;
+}
+
+.style-1 .text-section-skill {
+  color: white !important;
+}
+
+.style-1 .text-section-skill__selected {
+  color: white !important;
+  background-color: #78cff1 !important;
+}
+
+.style-1 .text-section-education {
+  color: white !important;
+}
+
+.style-1 .bg-footer {
+  background-color: #c03961 !important;
+}
+
 .style-2 .bg-navbar {
   background-color: black !important;
 }
@@ -34,21 +79,114 @@
   color: white !important;
 }
 
+.style-2 .jumbotron {
+  margin: auto;
+}
+
+.style-2 .bg-section-portfolio {
+  background-color: #424242;
+}
+
+.style-2 .bg-section-skill {
+  background-color: white;
+}
+
+.style-2 .bg-section-education {
+  background-color: #424242;
+}
+
+.style-2 .text-section-portfolio {
+  color: white !important;
+}
+
+.style-2 .text-section-portfolio__title {
+  color: #78cff1 !important;
+}
+
+.style-2 .text-section-portfolio__text {
+  color: black !important;
+}
+
+.style-2 .text-section-skill {
+  color: black !important;
+}
+
+.style-2 .text-section-skill__selected {
+  color: white !important;
+  background-color: #78cff1 !important;
+}
+
+.style-2 .text-section-education {
+  color: white !important;
+}
+
+.style-2 .bg-footer {
+  background-color: black !important;
+}
+
 .style-3 .bg-navbar {
-  background-color: blue;
+  background-color: #481849 !important;
 }
 
 .style-3 .bg-jumbotron {
-  background-color: white;
+  background-color: #811678 !important;
 }
 
 .style-3 .jumbotron h1, .style-3 .jumbotron p {
   font-family: "Caveat", cursive;
-  color: black;
+  color: white !important;
 }
 
 .style-3 .bg-btn {
-  background-color: grey;
+  background-color: #481849 !important;
   color: white !important;
+}
+
+.style-3 .jumbotron {
+  margin: auto;
+}
+
+.style-3 .bg-section-portfolio {
+  background-image: url("../images/7.jpg");
+  background-position: cover;
+}
+
+.style-3 .bg-section-skill {
+  background-image: url("../images/9.jpg");
+  background-position: cover;
+}
+
+.style-3 .bg-section-education {
+  background-image: url("../images/10.jpg");
+  background-position: cover;
+}
+
+.style-3 .text-section-portfolio {
+  color: black !important;
+}
+
+.style-3 .text-section-portfolio__title {
+  color: #78cff1 !important;
+}
+
+.style-3 .text-section-portfolio__text {
+  color: black !important;
+}
+
+.style-3 .text-section-skill {
+  color: black !important;
+}
+
+.style-3 .text-section-skill__selected {
+  color: white !important;
+  background-color: #78cff1 !important;
+}
+
+.style-3 .text-section-education {
+  color: black !important;
+}
+
+.style-3 .bg-footer {
+  background-color: #481849 !important;
 }
 /*# sourceMappingURL=styles.css.map */

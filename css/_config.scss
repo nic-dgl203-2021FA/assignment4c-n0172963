@@ -1,49 +1,112 @@
+// module
+
+
 @mixin header-style($bg-navbar,$bg-jumbotron,$font,$text,$bg_btn,$text-btn) {
-        .bg-navbar{
-            background-color: $bg-navbar;
+    .bg-navbar{
+        background-color: $bg-navbar;
+    }
+
+    .bg-jumbotron{
+        background-color: $bg-jumbotron;
+    }
+
+    .jumbotron{
+        h1,p {
+            font-family: $font;
+            color: $text;
         }
-    
-        .bg-jumbotron{
-            background-color: $bg-jumbotron;
-        }
-    
-        .jumbotron{
-            h1,p {
-                font-family: $font;
-                color: $text;
-            }
-        }
-    
-        .bg-btn{
-            background-color: $bg_btn;
-            color: $text-btn;
-        }
+    }
+
+    .bg-btn{
+        background-color: $bg_btn;
+        color: $text-btn;
+    }
+
+    .jumbotron {
+        margin: auto;
+    }
 }
 
-@mixin section-style(){
+@mixin section-style($background,$bg-portfolio,$bg-skill,$bg-education,$text-portfolio,$text-skill,$text-education){
+
+    @if($background=="images"){
+        .bg-section-portfolio{
+            background-image: $bg-portfolio;
+            background-position: cover;
+        }
+    
+        .bg-section-skill{
+            background-image: $bg-skill;
+            background-position: cover;
+        }
+    
+        .bg-section-education{
+            background-image: $bg-education;
+            background-position: cover;
+        }
+    }
+    @else{
+        .bg-section-portfolio{
+            background-color: $bg-portfolio;
+        }
+    
+        .bg-section-skill{
+            background-color: $bg-skill;
+        }
+    
+        .bg-section-education{
+            background-color: $bg-education;
+        }
+    }
+
+
+    .text-section-portfolio{
+        color: $text-portfolio;
+        &__title{
+            color: $text-color-3;
+        }
+        &__text{
+            color: $text-color-1;
+        }
+    }
+    .text-section-skill{
+        color: $text-skill;
+        &__selected{
+            color: $text-color-2;
+            background-color: $text-color-3;
+        }   
+    }
+
+    .text-section-education{
+        color: $text-education;
+    }
 
 }
 
-@mixin footer-style{
-
+@mixin footer-style($footer-color){
+    .bg-footer{
+        background-color: $footer-color;
+    }
 }
+
+// call module with condition
 
 @mixin switchStyle($style){
     @if($style == 1){
         
-        @include  header-style($primary-color-style-1,$secondary-color-style-1,$font-caveat-style-1,$text-color-style-1,$buton-color-style-1,$text-button-color-style-1);
-        @include  section-style();  
-        @include  footer-style(); 
+        @include  header-style($primary-color-style-1,$secondary-color-style-1,$font-caveat-style-1,$text-color-style-1,$button-color-style-1,$text-button-color-style-1);
+        @include  section-style('color',$bg-portfolio-style-1,$bg-skill-style-1,$bg-education-style-1,$text-color-2,$text-color-2,$text-color-2);  
+        @include  footer-style($footer-color-style-1); 
     }
     @else if($style == 2){
-        @include  header-style($primary-color-style-2,$secondary-color-style-2,$font-caveat-style-2,$text-color-style-2,$buton-color-style-2,$text-button-color-style-2);
-        @include  section-style();  
-        @include  footer-style(); 
+        @include  header-style($primary-color-style-2,$secondary-color-style-2,$font-caveat-style-2,$text-color-style-2,$button-color-style-2,$text-button-color-style-2);
+        @include  section-style('color',$bg-portfolio-style-2,$bg-skill-style-2,$bg-education-style-2,$text-color-2,$text-color-1,$text-color-2);  
+        @include  footer-style($footer-color-style-2); 
     }
     @else if($style == 3){
-        @include  header-style(blue,white,$font-caveat-style-2,black,grey,$text-button-color-style-2);
-        @include  section-style();  
-        @include  footer-style(); 
+        @include  header-style($primary-color-style-3,$secondary-color-style-3,$font-caveat-style-3,$text-color-style-3,$button-color-style-3,$text-button-color-style-3);
+        @include  section-style('images',$bg-portfolio-style-3,$bg-skill-style-3,$bg-education-style-3,$text-color-1,$text-color-1,$text-color-1);  
+        @include  footer-style($footer-color-style-3); 
     }
     @else{
 
