@@ -1,0 +1,51 @@
+@mixin header-style($bg-navbar,$bg-jumbotron,$font,$text,$bg_btn,$text-btn) {
+        .bg-navbar{
+            background-color: $bg-navbar;
+        }
+    
+        .bg-jumbotron{
+            background-color: $bg-jumbotron;
+        }
+    
+        .jumbotron{
+            h1,p {
+                font-family: $font;
+                color: $text;
+            }
+        }
+    
+        .bg-btn{
+            background-color: $bg_btn;
+            color: $text-btn;
+        }
+}
+
+@mixin section-style(){
+
+}
+
+@mixin footer-style{
+
+}
+
+@mixin switchStyle($style){
+    @if($style == 1){
+        
+        @include  header-style($primary-color-style-1,$secondary-color-style-1,$font-caveat-style-1,$text-color-style-1,$buton-color-style-1,$text-button-color-style-1);
+        @include  section-style();  
+        @include  footer-style(); 
+    }
+    @else if($style == 2){
+        @include  header-style($primary-color-style-2,$secondary-color-style-2,$font-caveat-style-2,$text-color-style-2,$buton-color-style-2,$text-button-color-style-2);
+        @include  section-style();  
+        @include  footer-style(); 
+    }
+    @else if($style == 3){
+        @include  header-style(blue,white,$font-caveat-style-2,black,grey,$text-button-color-style-2);
+        @include  section-style();  
+        @include  footer-style(); 
+    }
+    @else{
+
+    }
+}
