@@ -1,13 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Final Portfolio</title>
-</head>
-<body>
-    
-</body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Profile</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <header id="nav">
+              <nav id="scrollspy-nav" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+                <a href="#" class="navbar-brand">
+                <img src="images/logotype.png" height="28" alt="CoolBrand">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav smooth-scroll list-unstyled">
+                        <li class="nav-item scroll-link">
+                            <a class="nav-link" href="#profile">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio_section">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills_section">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education_section">Education</a>
+                        </li>
+                         <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown link
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="profile" class="jumbotron text-center bg-secondary">
+                <img src="images/5.png" height="200" alt="CoolBrand">
+                <h1 class="display-4">Hello, I'm Nhu Vu!</h1>
+                <p class="lead">I'm Nhu Vu. I'm a Student from NIC, majored in Commonication Design. I'm currently living in Virginia, U.S</p>
+                <hr class="my-4">
+                <p>3XX Wilderness Rd, Hampton, VA</p>
+                <p>Email: nvu@northislandcollege.ca</p>
+                <p>Phone: 503.860.XXXX</p>
+                <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#modalContactForm">Contact me</a>
+                </p>
+            </div>
+        </header>
+        <div class="section">
+            <!-- portfolio section -->
+            <div id="portfolio_section" style="width: 99%;">
+                <h1 class="display-4 d-flex justify-content-center text-primary">Portfolio</h1>
+                <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-4 col-sm-10 d-flex align-items-stretch">
+                    <div class="card" >
+                        <img class="card-img-top" src="images/1.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title text-info">The Whale Island</h5>
+                        <p class="card-text">The Island Whale is my last critique drawing created in FIN-110 on Fall term 2020. The basic concept is about the greatness of nature and how human lives are bonded with it. The project was inspired by the Indigenous origin stories about a turtle island, which also stands for deeply-held respect for the environment.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4 col-sm-10 d-flex align-items-stretch">
+                    <div class="card">
+                        <img class="card-img-top" src="images/2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title text-info">Osaka Sushi Re-Branding</h5>
+                        <p class="card-text">A re-branding design for a local business in Courtenay. Created in DGL -202 on Fall term 2020. Includes a stationery package and packaging supplies.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4 col-sm-10 d-flex align-items-stretch">
+                    <div class="card">
+                        <img class="card-img-top" src="images/3.png" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title text-info">PAWSOME Pet Finder App</h5>
+                        <p class="card-text">PAWSOME is a pet finder UI - UX design created in DGL-111 on Winter term 2021. The design is aimed to create an user interface and user experience that works best for people who is looking for a furry companion. View app prototype for more details.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- skills section -->
+            <div id="skills_section" style="width: 99%;">
+                <h1 class="display-4 d-flex justify-content-center text-primary">Skills</h1>
+                <div class="container">
+                <div class='row d-flex justify-content-center'>
+                    <div class="list-group col-md-6 col-sm-12 d-flex flex-row flex-wrap text-center p-3">
+                    <button type="button" class="list-group-item list-group-item-action list-group-item-secondary">SKILLS</button>
+                    <button type="button" class="list-group-item text-warning bg-dark list-group-item-action">Flexibility/ Adaptability</button>
+                    <button type="button" class="list-group-item text-warning bg-dark text-white list-group-item-action">Learn from the critics</button>
+                    <button type="button" class="list-group-item list-group-item-action">Computer skills</button>
+                    <button type="button" class="list-group-item list-group-item-action">Consensus building</button>
+                    <button type="button" class="list-group-item text-warning bg-dark list-group-item-action">Academic/ Learning skills</button>
+                    <button type="button" class="list-group-item text-warning bg-dark list-group-item-action">Teamwork/ Collaboration skills</button>
+                    </div>
+                    <div class="list-group col-md-6 col-sm-12 d-flex flex-row flex-wrap text-center p-3">
+                    <button type="button" class="list-group-item list-group-item-action list-group-item-secondary">SOFT</button>
+                    <button type="button" class="list-group-item text-warning bg-dark list-group-item-action">Creative skills</button>
+                    <button type="button" class="list-group-item list-group-item-action">Effective communication</button>
+                    <button type="button" class="list-group-item list-group-item-action">Multicultural skills</button>
+                    <button type="button" class="list-group-item list-group-item-action">Patience</button>
+                    <button type="button" class="list-group-item list-group-item-action">Self – confident</button>
+                    <button type="button" class="list-group-item list-group-item-action">Organization skills</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- education section -->
+            <div id="education_section" style="width: 99%;">
+                <h1 class="display-4 d-flex justify-content-center text-primary">Education</h1>
+                <div class="container ">
+                    <div class="accordion" id="accordionExample">
+                    
+                        <div class="card" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link" type="button">
+                                2010-2013
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                            <p>Tran Hung Dao High School Ho Chi Minh City, Vietnam</p>
+                            <p class="text-right">2010-2013</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="card" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button">
+                                September 2013 - May 2017
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                            <p>Hong Bang International University, Ho Chi Minh City, Vietnam Graduated with an Undergraduate Bachelor Degree in Japanese Studies.</p>
+                            <p class="text-right">September 2013 - May 2017</p>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <div class="card" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link" type="button">
+                                May 2018 – present
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                            <p>North Island College, Courtenay, BC. Currently enrolled in a Diploma of Communication Design.</p>
+                            <p class="text-right">May 2018 – present</p>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- footer -->
+
+        <!-- Footer -->
+        <footer id="footer" class="bg-dark text-center text-white mt-4 bg-primary">
+            <!-- Grid container -->
+            <div class="container p-2">
+                <!-- Section: Social media -->
+                <section>
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://facebook.com/" role="button"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://google.com/" role="button"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/" role="button"><i class="fab fa-github"></i></a>
+                </section>
+                <!-- Section: Social media -->
+            </div>
+
+            <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2020 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+            </div>
+        </footer>
+    </body>
 </html>
