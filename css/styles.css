@@ -1,0 +1,54 @@
+.style-1 .bg-navbar {
+  background-color: #c03961 !important;
+}
+
+.style-1 .bg-jumbotron {
+  background-color: #f587a8 !important;
+}
+
+.style-1 .jumbotron h1, .style-1 .jumbotron p {
+  font-family: "Caveat", cursive;
+  color: white !important;
+}
+
+.style-1 .bg-btn {
+  background-color: #d32559 !important;
+  color: white !important;
+}
+
+.style-2 .bg-navbar {
+  background-color: black !important;
+}
+
+.style-2 .bg-jumbotron {
+  background-color: #c0b5b5 !important;
+}
+
+.style-2 .jumbotron h1, .style-2 .jumbotron p {
+  font-family: "Caveat", cursive;
+  color: black !important;
+}
+
+.style-2 .bg-btn {
+  background-color: black !important;
+  color: white !important;
+}
+
+.style-3 .bg-navbar {
+  background-color: blue;
+}
+
+.style-3 .bg-jumbotron {
+  background-color: white;
+}
+
+.style-3 .jumbotron h1, .style-3 .jumbotron p {
+  font-family: "Caveat", cursive;
+  color: black;
+}
+
+.style-3 .bg-btn {
+  background-color: grey;
+  color: white !important;
+}
+/*# sourceMappingURL=styles.css.map */

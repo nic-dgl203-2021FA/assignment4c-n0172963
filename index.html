@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Profile</title>
+        <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -11,10 +12,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/styles.css">
     </head>
-
-    <body>
+    <body id="styles" class="style-1">
         <header id="nav">
-              <nav id="scrollspy-nav" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+              <nav id="scrollspy-nav" class="navbar navbar-expand-lg navbar-dark bg-navbar fixed-top">
                 <a href="#" class="navbar-brand">
                 <img src="images/logotype.png" height="28" alt="CoolBrand">
                 </a>
@@ -37,29 +37,75 @@
                         </li>
                          <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown link
+                            Styles
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" onclick="switchStyle('default')">default</a>
+                                <a class="dropdown-item style-1" onclick="switchStyle('style-1')">style 1</a>
+                                <a class="dropdown-item style-2" onclick="switchStyle('style-2')">style 2</a>
+                                <a class="dropdown-item style-3" onclick="switchStyle('style-3')">style 3</a>
                             </div>
                         </li>
                     </ul>
                 </div>
             </nav>
-            <div id="profile" class="jumbotron text-center bg-secondary">
+            <div id="profile" class="jumbotron text-center bg-jumbotron">
                 <img src="images/5.png" height="200" alt="CoolBrand">
                 <h1 class="display-4">Hello, I'm Nhu Vu!</h1>
                 <p class="lead">I'm Nhu Vu. I'm a Student from NIC, majored in Commonication Design. I'm currently living in Virginia, U.S</p>
                 <hr class="my-4">
-                <p>3XX Wilderness Rd, Hampton, VA </p>
+                <p>3XX Wilderness Rd, Hampton, VA</p>
                 <p>Email: nvu@northislandcollege.ca</p>
                 <p>Phone: 503.860.XXXX</p>
                 <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#modalContactForm">Contact me</a>
+                <a class="btn bg-btn btn-lg" href="#" role="button" data-toggle="modal" data-target="#modalContactForm">Contact me</a>
                 </p>
             </div>
+              <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                        <i class="fas fa-user prefix grey-text">
+                        <label data-error="wrong" data-success="right" for="form34">Your name</label>
+                        </i>
+                        <input type="text" id="form34" class="form-control validate">
+                    </div>
+
+                    <div class="md-form mb-5">
+                        <i class="fas fa-envelope prefix grey-text">
+                        <label data-error="wrong" data-success="right" for="form29">Your email</label>
+                        </i>
+                        <input type="email" id="form29" class="form-control validate">
+                    </div>
+
+                    <div class="md-form mb-5">
+                        <i class="fas fa-tag prefix grey-text">
+                        <label data-error="wrong" data-success="right" for="form32">Subject</label>
+                        </i>
+                        <input type="text" id="form32" class="form-control validate">
+                    </div>
+
+                    <div class="md-form">
+                        <i class="fas fa-pencil prefix grey-text">
+                        <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                        </i>
+                        <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                    </div>
+
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn bg-btn">Send <i class="fas fa-paper-plane-o ml-1"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
         </header>
         <div class="section">
             <!-- portfolio section -->
@@ -216,5 +262,8 @@
                 <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
             </div>
         </footer>
+        <script src="js/index.js">
+            
+        </script>
     </body>
 </html>

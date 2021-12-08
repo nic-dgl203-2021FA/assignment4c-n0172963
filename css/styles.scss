@@ -1,6 +1,16 @@
-footer {
-    position: fixed;
-    height: 100px;
-    bottom: 0;
-    width: 100%;
-}
+
+@import 'variable';
+@import 'config';
+
+
+    .style-1{
+        @include switchStyle(1);
+    }
+
+    .style-2{
+        @include switchStyle(2);
+    }
+    .style-3{
+        @include switchStyle(3);
+    }
+
